@@ -8,23 +8,20 @@ $(document).ready(() => {
 
 function getUsers(){
   Tabletop.init({
-    key: '1UGEMDVXlgE3NU2E-DRkFxSfaha55YrIH-1cXtETi9O0',
+    key: '1-56Bb41FTwJdmcrSEUEisRhzUxmWOLj1luH-7ZNnAzY',
     callback: showUserInfo,
     simpleSheet: true
   })
 }
 
 function showUserInfo(data, tabletop) {
-  console.log(data)
+  // console.log(data)
   createCards(data)
 }
 
 function createCards(data) {
 
     data.forEach(user => {
-      if (users) {
-
-      }
       if (user.learning) {
         const card = `
         <div class="card small-12 large-3 columns mp-card">
@@ -38,7 +35,6 @@ function createCards(data) {
             </div>
           </div>
           `
-
           appendCard(card)
         }
       })
