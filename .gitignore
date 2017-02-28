@@ -6,3 +6,4 @@ dist/
 config.js
 .babelrc
 .babelrc0
+stylesheets/scss

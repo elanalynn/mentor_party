@@ -1,0 +1,24 @@
+.mp-top-bar, .mp-top-bar .menu {
+  background-color: #004453;
+  padding-top: 5px;
+  color: #fff;
+}
+
+.mp-search-container {
+  display: flex;
+}
+
+main {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.mp-card {
+  min-height: 440px;
+  border: 0;
+}
+
+.mp-card-divider {
+  background-color: #00d1ff;
+}

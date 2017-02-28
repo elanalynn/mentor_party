@@ -1,6 +1,3 @@
-// import $ from 'jQuery'
-import Tabletop from 'tabletop'
-
 $(document).ready(() => {
   $(document).foundation()
   getUsers()
@@ -8,24 +5,21 @@ $(document).ready(() => {
 
 function getUsers(){
   Tabletop.init({
-    key: '1UGEMDVXlgE3NU2E-DRkFxSfaha55YrIH-1cXtETi9O0',
+    key: '1-56Bb41FTwJdmcrSEUEisRhzUxmWOLj1luH-7ZNnAzY',
     callback: showUserInfo,
-    simpleSheet: true
   })
 }
 
 function showUserInfo(data, tabletop) {
   console.log(data)
-  createCards(data)
+  createCards(data['final data'].elements)
 }
 
 function createCards(data) {
 
     data.forEach(user => {
-      if (users) {
-
-      }
       if (user.learning) {
+        console.log(user)
         const card = `
         <div class="card small-12 large-3 columns mp-card">
           <div class="card-divider mp-card-divider">
@@ -33,7 +27,6 @@ function createCards(data) {
           </div>
           <div class="card-section">
             <img src="${ user.photo }" alt="${ user.name }">
-              <h4>${ user.role }</h4>
               <p>${ user.learning }</p>
             </div>
           </div>
