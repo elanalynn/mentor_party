@@ -31,7 +31,6 @@ function createCards(data) {
             </div>
           </div>
           `
-
           appendCard(card)
         }
       })
